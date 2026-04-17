@@ -1,7 +1,7 @@
-School-Log-Archiver
+# School-Log-Archiver
 A GUI tool that automatically scrapes and archives weekly newsletters from the Manbang School parent portal, saving them as PDFs, images, HTML, and plain text — organized by semester and week.
 
-Features
+## Features
 
 Automated Scraping — Uses Selenium WebDriver to automatically crawl the weekly newsletter pages
 PDF Export — Converts scraped newsletters and images into PDF files
@@ -11,8 +11,8 @@ Text Export — Saves plain text just in case
 Auto Folder Organization — Files are automatically sorted by semester and week into the weekly_notices folder
 
 
-Getting Started
-Option 1 — Run the prebuilt executable (recommended)
+## Getting Started
+### Option 1 — Run the prebuilt executable (recommended)
 
 Go to the latest release page and download the following files into the same folder:
 
@@ -22,7 +22,7 @@ chromedriver.exe — must match your installed Chrome version (download here). T
 
 Double-click gui_app.exe to launch.
 
-Option 2 — Run from source (for developers)
+### Option 2 — Run from source (for developers)
 
 Install Python 3.8+
 Install dependencies:
@@ -36,12 +36,12 @@ Run the app:
 
 bash   python gui_app.py
 
-Usage
+## Usage
 
-Launch gui_app.exe (or python gui_app.py) — a GUI window will appear.
+### Launch gui_app.exe (or python gui_app.py) — a GUI window will appear.
 Log in:
 
-Click the "Log In" button — a new Chrome window will open.
+### Click the "Log In" button — a new Chrome window will open.
 Manually log in to the Manbang School parent portal.
 Once logged in and the newsletter page loads, the GUI status will change to "Logged In".
 
@@ -57,15 +57,15 @@ Stop archiving — Click the "Stop" button at any time to pause scraping.
 Open saved folder — Click "Open Saved Folder" to open the weekly_notices directory directly.
 
 
-Troubleshooting
+## Troubleshooting
 
-chromedriver.exe errors:
+### chromedriver.exe errors:
 
 The chromedriver.exe version must match your installed Chrome browser version.
 If you've updated Chrome, download a matching chromedriver.exe from the ChromeDriver download page.
 Make sure gui_app.exe and chromedriver.exe are in the same folder.
 
 
-Scraping stops working:
+### Scraping stops working:
 
 If the Manbang School parent portal updates its HTML structure, the scraper may break. In that case, the source code (script.py) will need to be updated manually.
